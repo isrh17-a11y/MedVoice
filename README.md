@@ -1,6 +1,6 @@
-# 🩺 MedVoice
+# 🩺 MedVoice-Built using MURF-AI
 
-MedVoice is an AI-powered medical report assistant designed for elderly patients. The application takes complex medical reports—such as CBC and chemistry panels—and translates them into simple, warm, plain-language text. To make it even more accessible, MedVoice automatically generates high-quality text-to-speech (TTS) audio of the summary so patients can just hit "play."
+MedVoice is an AI-powered medical report assistant designed for elderly patients, built using Murf AI. The application takes complex medical reports and translates them into simple, warm, plain-language text. To make it even more accessible, MedVoice automatically generates high-quality text-to-speech (TTS) audio of the summary so patients can just hit "play."
 
 ## 🚀 Features
 - **PDF Extraction**: Instantly pulls text out of standard medical PDF uploads.
@@ -33,7 +33,7 @@ Create a `.env` file in the root directory (the same level as `backend/`) and po
 ```ini
 GEMINI_API_KEY=your_gemini_api_key_here
 MURF_API_KEY=your_murf_api_key_here
-FLASK_PORT=5000
+FLASK_PORT=5001
 ```
 
 ### 3. Backend Setup
@@ -137,4 +137,4 @@ Allows the user to ask questions regarding the generated summary or items inside
 ```
 
 ---
-*Created dynamically for the MedVoice project.*
+
