@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: medvoice-backend
+    env: python
+    buildCommand: cd backend && pip install -r requirements.txt
+    startCommand: cd backend && gunicorn wsgi:app
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: MURF_API_KEY
+        sync: false
+      - key: FLASK_PORT
+        value: "5000"
