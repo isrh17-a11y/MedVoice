@@ -15,7 +15,7 @@ app = Flask(__name__)
 CORS(app, origins=[
     "http://localhost:5001",
     "http://127.0.0.1:5001",
-    "https://medvoice.vercel.app"
+    "https://med-voice-lilac.vercel.app/"
 ])
 
 
