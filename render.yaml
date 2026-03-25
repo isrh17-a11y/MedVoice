@@ -1,7 +1,7 @@
 services:
   - type: web
     name: medvoice-backend
-    env: python
+    runtime: python
     buildCommand: cd backend && pip install -r requirements.txt
     startCommand: cd backend && gunicorn wsgi:app
     envVars:
