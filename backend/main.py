@@ -11,7 +11,12 @@ import murf_tts
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app)
+
+CORS(app, origins=[
+    "http://localhost:5001",
+    "http://127.0.0.1:5001",
+    "https://medvoice.vercel.app" 
+])
 
 
 @app.route("/health", methods=["GET"])
