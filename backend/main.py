@@ -15,7 +15,7 @@ app = Flask(__name__)
 CORS(app, origins=[
     "http://localhost:5001",
     "http://127.0.0.1:5001",
-    "https://medvoice.vercel.app" 
+    "https://medvoice.vercel.app"
 ])
 
 
@@ -86,5 +86,5 @@ def ask_followup():
 
 
 if __name__ == "__main__":
-    port = int(os.getenv("FLASK_PORT", 5000))
+    port = int(os.getenv("FLASK_PORT", 5001))
     app.run(debug=True, port=port)
